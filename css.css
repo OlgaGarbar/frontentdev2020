@@ -1,0 +1,33 @@
+.card{
+	border: 1px solid gray;
+	width: 400px;
+	height: 300px;
+	border-radius:10px;
+	 background: rgb(131,58,180);
+	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 52%, rgba(252,176,69,1) 100%);
+	padding: 15px;
+	box-shadow: -20px 10px 5px -5px rgba(0,0,0,0.49);
+}
+.card h2{
+	font-family: Georgia;
+	text-transform: uppercase;
+	text-align: center;
+}
+.card img{
+	height:50%;
+	border:5px solid black;
+	
+}
+
+.card .info {
+	display: inline-block;
+}
+.card .info table{
+	width:250px;
+	display: inline-block;
+	text-align: left ;
+}
+
+
+}
+

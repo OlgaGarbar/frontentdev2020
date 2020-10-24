@@ -1,0 +1,20 @@
+header{
+    border: 1px solid rgb(67, 168, 42);
+    width: 500px;
+    height: 90px;
+    border-radius: 5px;
+    background: #f3ef11;
+}
+i h3{
+
+}
+ h1{
+    font-family: Georgia;
+    text-transform: uppercase;
+    text-align: center;
+}
+ h3{
+    font-family:serif red 30em;
+    text-transform: unset;
+    text-align: left;
+}

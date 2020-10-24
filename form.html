@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Формуляры</title>
+        <link rel="stylesheet"href="form.css">
+        <header>
+            <article class="header"></article>
+            <h1>Заполните анкету.</h1>
+        </header>   
+    </head>
+    <body>
+        <form action="http//form.com"method="POST">
+            <br>
+            <article class="form"></article>
+                <h3>Введите Ваши данные</h3>
+                        Фамилия   <Input type="text"></Input>
+                    <br>    
+                        Имя    <Input type="text"></Input>
+                    <br>
+                        Номер телефона<Input type="number"></Input> 
+                     <br>
+                        E-mail<Input type="email"></Input>
+                <br>    
+                    Номер телефона<Input type="number"></Input>
+            <Input type="password"></Input> 
+            <Input type="color"></Input>
+            <Input type="checkbox">checkbox</Input>
+        <br>
+            <label><input type="checkbox>">ВЫБЕРИ МЕНЯ</label>
+            <label for="select_me">ВЫБЕРИ меня </label>
+        <br>
+            <input type="checkbox"id="select_me">
+            <label for="select_me">ВЫБЕРИ меня 2</label>
+        <br>
+        <input type="radio"> Radio
+        <br>
+        <input type="file" name="" id="">
+        <br>
+        <select name="" id="">
+            <option value="">Moldova</option>
+            <option value="">Romania</option>
+            <option value="">Ucraina</option>
+        </select>
+        <br>
+        <select name="" id="" multiple>
+            <option value="">Moldova</option>
+            <option value="">Romania</option>
+            <option value="">Ucraina</option>
+        </select>
+        <br>
+        <select name="" id="" multiple>
+            <option value="">Moldova</option>
+            <option value="" disabled>Romania</option>
+            <option value="">Ucraina</option>
+        </select>
+        <br>
+        <input type="number" name="" id="" readonly value="123">
+        <br>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        <br>
+        <input type="hidden" name="" value="sunt asuns">
+        <input type="text" value="Hello">
+        <input type="reset" value="Reset form">
+        <input type="submit">
+    </form>
+    </body>
+</html>
