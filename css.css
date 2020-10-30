@@ -16,10 +16,8 @@
 .card img{
 	height:50%;
 	border:5px solid black;
-	
 }
-
-.card .info {
+.card .info{
 	display: inline-block;
 }
 .card .info table{
@@ -27,7 +25,3 @@
 	display: inline-block;
 	text-align: left ;
 }
-
-
-}
-
