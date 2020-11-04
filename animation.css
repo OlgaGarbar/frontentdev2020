@@ -1,0 +1,175 @@
+.square {
+height: 100px;
+width: 100px;
+background-color: chartreuse;
+margin: 100px auto;
+border: 2px solid black;
+padding: 10px;
+
+animation-name: spin;
+animation-duration: 3s;
+animation-timing-function: ease-in;
+animation-iteration-count: 1;
+animation-delay: 2s;
+animation-direction: normal;
+}
+
+.square2{
+    height: 90px;
+    width: 90px;
+    background-color: aqua;
+    margin: auto;
+    padding: 0;
+    border: solid 2px white;
+
+    animation-name: spin2;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+    animation-direction: reverse;
+    animation-iteration-count: 1;
+    
+}
+.square3{
+    height: 100px;
+    width:100px;
+    background-color: royalblue;
+    border: 2px solid black;
+    margin: auto;
+    box-shadow: 0px 3px 15px green;
+}
+.bar{
+    width: 100px;
+    height: 100px;
+    background: repeating-linear-gradient(-45deg,
+    transparent,
+    transparent 10px,
+    rgb(255, 255, 255) 10px,
+    #e9fa02 15px);
+    animation: loading 3s ease infinite;
+}
+.dim{
+    width: 100px;
+    height: 100px;
+    border: 2px solid darkgreen;
+    background-color: yellow;
+    margin: auto;
+    margin-top: 50px;
+
+    animation-name: dimensiune;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-direction: linear;
+    animation-iteration-count: 20;
+}
+.round{
+    width: 100px;
+    height: 100px;
+    border: 10px solid darkgreen;
+    border-radius: 50%;
+    background-color: lightseagreen;
+    margin: auto;
+    margin-top: 50px;
+    animation-name: cerk;
+    animation-duration: 20s;
+    animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
+    animation-delay: 1s;
+    animation-direction: linear;
+    animation-iteration-count: 20;
+}
+.mouse img{
+    height: 70px;
+    animation-name: mouse;
+    animation-duration: 50s;
+    animation-timing-function:cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-delay: 1s;
+    animation-direction: ease;
+    animation-iteration-count: 20;
+    z-index: 3;
+    position:absolute;
+}
+
+
+@keyframes cerk{
+    0%{
+       margin-left: 0%;
+    }
+    50%{
+        margin-left: 50%;
+    }
+    75%{
+        margin-left: 30%;
+    }
+    100%{
+        margin-left: 100%;
+    }
+    
+}
+@keyframes mouse{
+    0%{
+       margin-left: 100%;
+    }   
+    50%{
+        margin-left: 50%;
+    }
+    75%{
+        margin-left: 60%;
+    }
+    100%{
+        margin-left: 0%
+    }
+    
+}
+
+@keyframes dimensiune{
+    0%{
+        width: 90px;
+        height: 90px;
+    }
+    50%{
+        background-color: tomato;
+        border-radius: 20px;
+    }
+    75%{
+        border-radius:40px ;
+    }
+    100%{
+        width:10px;
+        height: 10px;
+        border-radius: 50px;
+    }
+}
+
+@keyframes loading{
+    0%{
+        margin-left: 0;
+    }
+    100%{
+        margin-left: -100px;
+}
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        background-color: black;
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin2{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        background-color: cornsilk;
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
